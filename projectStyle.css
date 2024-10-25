@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body {
@@ -115,9 +114,9 @@ body {
     font-family: "icons";
     font-size: xx-large;
     cursor: pointer;
-    white-space: nowrap; /* Prevent icons from breaking into multiple lines */
-    display: inline-block; /* Ensure proper inline sizing */
-    margin: 0 auto; /* Center icons */
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 #subImages {
@@ -175,15 +174,8 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 83%;
-
 }
 
-.title {
-    display: flex;
-    justify-content: space-between;
-    gap: 83%;
-    flex-wrap: nowrap;
-}
 .scroll-hr {
     opacity: 0;
     width: 1100px;
@@ -246,6 +238,9 @@ footer {
 iframe {
     margin-top: 1.2%;
     box-shadow: 5px 2px 4px var(--black);
+    width: 100%; /* Make iframe width responsive */
+    height: auto; /* Let height adjust based on the width */
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
 }
 
 /* MEDIA QUERIES */
@@ -254,23 +249,28 @@ iframe {
 @media (min-width: 769px) {
     #workImages img {
         width: calc(50% - 20px); /* Two images per row */
-        
-        
     }
+    
     #icons {
-        font-size: smaller; /* Reduce text size for mobile */
+        font-size: smaller; /* Reduce text size for desktop */
         margin-left: 2%;
-        max-width: 95%; /* Ensure text fits within the viewport */
+        max-width: 95%;
         word-wrap: break-word;
         overflow-wrap: break-word;
+    }
+
+    iframe {
+        width: 100%;
+        height: 500px; /* Standard height for iframes on larger screens */
     }
 }
 
 /* Tablets */
 @media (max-width: 768px) {
-    body{
+    body {
         overflow-x: hidden;
     }
+
     #logo {
         width: 30%; /* Smaller logo for tablets */
     }
@@ -287,21 +287,27 @@ iframe {
     #workImages img {
         width: 100%; /* Full-width images on tablets */
     }
-    .desc, 
+
+    .desc,
     .information p {
         font-size: small; /* Reduce text size for mobile */
         margin-left: 2%;
-        max-width: 95%; /* Ensure text fits within the viewport */
+        max-width: 95%;
         word-wrap: break-word;
         overflow-wrap: break-word;
-        
     }
+
     #icons {
         font-size: small; /* Reduce text size for mobile */
         margin-left: 2%;
-        max-width: 95%; /* Ensure text fits within the viewport */
+        max-width: 95%;
         word-wrap: break-word;
         overflow-wrap: break-word;
+    }
+    
+    iframe {
+        width: 100%; /* Ensure full width on tablets */
+        aspect-ratio: 16 / 9; /* Maintain aspect ratio */
     }
 }
 
@@ -310,9 +316,11 @@ iframe {
     #logo {
         width: 40%; /* Even smaller logo on mobile */
     }
-    body{
+
+    body {
         overflow-x: hidden;
     }
+
     #navbar {
         flex-direction: column;
         align-items: center;
@@ -327,35 +335,36 @@ iframe {
     }
 
     #hero h1 {
-        font-size: large; 
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
-    #hero p, {
-        font-size: small; /* Adjust paragraph size for mobile */
+        font-size: large;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
 
     footer p {
-        font-size: small; /* Adjust footer text for mobile */
+        font-size: small;
         word-wrap: break-word;
-        overflow-wrap: break-word
+        overflow-wrap: break-word;
     }
-    .desc, 
+
+    .desc,
     .information p {
-        font-size: small; /* Reduce text size for mobile */
+        font-size: small;
         margin-left: 2%;
-        max-width: 95%; /* Ensure text fits within the viewport */
+        max-width: 95%;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
+
     #icons {
-        font-size: small; /* Reduce text size for mobile */
+        font-size: small;
         margin-left: 2%;
-        max-width: 95%; /* Ensure text fits within the viewport */
+        max-width: 95%;
         word-wrap: break-word;
         overflow-wrap: break-word;
+    }
+
+    iframe {
+        width: 100%; /* Full-width iframe on mobile */
+        aspect-ratio: 16 / 9; /* Keep a good video aspect ratio */
     }
 }
