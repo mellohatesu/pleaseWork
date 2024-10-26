@@ -237,6 +237,9 @@ iframe {
     box-shadow: 5px 2px 4px var(--black);
     width: 100%; /* Make iframe responsive */
     height: auto; /* Auto height to maintain aspect ratio */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
+
 }
 
 /* MEDIA QUERIES */
