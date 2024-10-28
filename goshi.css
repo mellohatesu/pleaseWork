@@ -235,7 +235,7 @@ iframe {
     margin-top: 1.2%;
     box-shadow: 5px 2px 4px var(--black);
     width: 100%; /* Make iframe responsive */
-    height: 100% /* Auto height to maintain aspect ratio */
+    height: 100%;/* Auto height to maintain aspect ratio */
     overflow: hidden;
     -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
     
