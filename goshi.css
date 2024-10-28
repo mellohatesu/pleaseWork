@@ -120,10 +120,9 @@ body {
     margin: 0 auto; /* Center icons */
 }
 
-/* Sub Images Section */
 #subImages {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Row layout for larger screens */
 }
 
 #subImages img {
@@ -236,10 +235,10 @@ iframe {
     margin-top: 1.2%;
     box-shadow: 5px 2px 4px var(--black);
     width: 100%; /* Make iframe responsive */
-    height: auto; /* Auto height to maintain aspect ratio */
+    height: 177.78%; /* Auto height to maintain aspect ratio */
     overflow: auto;
     -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
-
+    
 }
 
 /* MEDIA QUERIES */
@@ -273,6 +272,17 @@ iframe {
     iframe {
         width: 100%; /* Full width for iframe on tablets */
         height: auto; /* Adjust height */
+    }
+
+    #subImages {
+        flex-direction: column; /* Stack iframe and image vertically */
+        align-items: center;
+    }
+
+    #subImages iframe,
+    #subImages img {
+        width: 100%; /* Full-width iframe and image on tablets */
+        margin-bottom: 10px;
     }
 }
 
@@ -319,9 +329,19 @@ iframe {
     }
 
     iframe {
-        width: 100%; /* Full width on mobile */
-        height: auto; /* Adjust height for mobile */
-        max-width: 100%; /* Ensure iframe doesn't exceed viewport */
+        height: 100%; /* Adjust height for mobile */
+        max-width: 1177.78%; /* Ensure iframe doesn't exceed viewport */
         box-shadow: 2px 2px 4px var(--black); /* Keep the shadow for visibility */
+    }
+
+    #subImages {
+        flex-direction: column; /* Stack vertically on mobile */
+        align-items: center;
+    }
+
+    #subImages iframe,
+    #subImages img {
+        width: 100%; /* Full width for iframe and image on mobile */
+        margin-bottom: 10px; /* Space between iframe and image */
     }
 }
