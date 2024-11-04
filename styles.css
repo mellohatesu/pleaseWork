@@ -76,7 +76,7 @@ body {
     height: auto;
     margin-top :2%;
     transition: .1s ease-in-out;
-    margin-left: 2%;
+ 
 }
 
 #navbar {
@@ -108,7 +108,6 @@ body {
 #hero h1 {
     font-size: large;
     font-weight: light;
-    margin-left: 2%;
 
 }
 
@@ -248,5 +247,11 @@ footer a {
 
     footer p {
         font-size: small; /* Adjust footer text for mobile */
+    }
+    #hero h1 {
+        font-size: large;
+        font-weight: light;
+        margin-left: 2%
+    
     }
 }
