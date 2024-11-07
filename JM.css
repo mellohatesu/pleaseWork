@@ -26,11 +26,36 @@ body {
     font-family: 'icons';
     src: url(fonts/Software-Icons.otf);
 }
+@font-face {
+    font-family: "Unbounded";
+    src: url(fonts/Unbounded/Unbounded-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url(fonts/Unbounded/Unbounded-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded/Unbounded-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded/Unbounded-Black.ttf") format("truetype");
+    font-weight: bold;
+}
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: 'solanel', sans-serif;
+    font-family: "Unbounded", 'solanel', sans-serif;
 }
 
 #header {
