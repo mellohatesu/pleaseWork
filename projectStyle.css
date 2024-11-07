@@ -44,6 +44,12 @@ body {
 }
 
 @font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded/Unbounded-Medium.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
     font-family: 'solanel';
     src: url(fonts/solanelRegular.otf);
 }
@@ -129,6 +135,7 @@ body {
     overflow-y: auto; /* Allows vertical scrolling */
     padding: 10px;
     box-sizing: border-box;
+    margin-left: 3.5%;
 
 }
 
@@ -145,6 +152,12 @@ body {
     font-family: "icons";
     font-size: larger;
     cursor: pointer;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: xx-large;
 }
 
 #subImages {
@@ -164,6 +177,8 @@ body {
 .desc {
     margin-left: 3.7%;
     font-size: x-large;
+    font-family: "Unbounded";
+    font-style: normal;
 }
 
 .information {
@@ -175,6 +190,10 @@ body {
     margin-top: 2%;
 }
 
+figcaption{
+    font-weight: lighter;
+    opacity: 0%;
+}
 .desc h2 span {
     font-size: inherit;
     border: 2px solid var(--black);
@@ -228,7 +247,10 @@ body {
 footer {
     background-color: var(--black);
     color: var(--white);
-    margin-top: 2%;
+    margin-top: 3%;
+    margin-left: 4.5%;
+    display: flex;
+    width: 1200px;
 }
 
 /* Animations */
@@ -305,6 +327,7 @@ footer {
         max-width: 95%;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        font-weight: normal;
     }
 
     #icons {
@@ -357,6 +380,7 @@ footer {
         font-size: small;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        margin: 5%;
     }
 
     .desc,
