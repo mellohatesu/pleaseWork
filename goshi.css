@@ -120,7 +120,7 @@ body {
 }
 
 #workImages {
-    display: flex;
+    
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
@@ -149,12 +149,10 @@ body {
 
 #subImages {
     display: flex;
-    flex-direction: row; /* Row layout for larger screens */
-}
-
-#subImages img {
-    width: 50%;
-    margin-bottom: 10px;
+    flex-direction: column; /* Row layout for larger screens */
+    gap: 20px;
+    width: 100%;
+    align-items: center;
 }
 
 .textBlock {
