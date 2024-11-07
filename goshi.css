@@ -65,7 +65,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0% 3%;
+
 }
 
 #header p {
@@ -89,6 +89,7 @@ body {
     justify-content: start;
     list-style-type: none;
     padding: 20px 0;
+    margin-right: 3%;
 }
 
 #navbar li {
