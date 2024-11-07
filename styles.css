@@ -9,7 +9,7 @@ body {
     background-size: cover;
     font-family: 'Unbounded', sans-serif;
     font-weight: normal;
-    color: var(--black)
+    color: var(--black);
 }
 
 :root {
@@ -33,38 +33,35 @@ body {
     src: url(fonts/Unbounded/Unbounded-Regular.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Unbounded";
     src: url(fonts/Unbounded/Unbounded-Light.ttf) format("truetype");
     font-weight: lighter;
-  }
-  
+}
 
-  
-  @font-face {
+@font-face {
     font-family: "Unbounded";
     src: url("fonts/Unbounded/Unbounded-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Unbounded";
     src: url("fonts/Unbounded/Unbounded-Black.ttf") format("truetype");
     font-weight: bold;
-   
-  }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 0 10px; */
 }
 
 #header {
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0% 0%;
@@ -74,9 +71,8 @@ body {
 #logo {
     width: 20%;
     height: auto;
-    margin-top :2%;
+    margin-top: 2%;
     transition: .1s ease-in-out;
- 
 }
 
 #navbar {
@@ -108,7 +104,6 @@ body {
 #hero h1 {
     font-size: large;
     font-weight: light;
-
 }
 
 #hero p {
@@ -117,24 +112,25 @@ body {
 
 #workImages {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column; /* Change from row to column */
+    justify-content: start;
     padding: 10px;
     border: 1px solid;
     border-radius: 0 20px 0px 0;
+    width: 100%; /* Ensure the container takes full width */
 }
 
 .project-link {
-    flex: 0 0 calc(50% - 10px); /* Two items per row */
+    flex: 0 0 100%; /* Make images take up full width of the container */
     display: block;
     overflow: hidden;
-    margin: 10px;
+    margin: 10px 0; /* Margin to space out images vertically */
 }
 
 #workImages img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Ensure images take up full width of their container */
+    height: 100%; /* Ensure images stretch to fill container height */
+    object-fit: cover; /* Maintain aspect ratio while filling space */
     transition: transform 0.3s ease;
     box-shadow: 1px 2px 4px black;
 }
@@ -191,10 +187,10 @@ footer a {
 
 /* RESPONSIVE MEDIA QUERIES */
 
-/* Desktop View - Two items per row */
+/* Desktop View */
 @media (min-width: 769px) {
     .project-link {
-        flex: 0 0 calc(50% - 20px); /* Two images per row */
+        flex: 0 0 calc(50% - 20px); /* Two images per row for wider screens */
     }
 }
 
@@ -210,11 +206,11 @@ footer a {
     }
     
     #workImages {
-        flex-direction: column; /* Stack images on top of each other */
+        flex-direction: column; /* Ensure images stack vertically on tablets */
     }
     
     .project-link {
-        flex: 0 0 100%; /* Make images full-width */
+        flex: 0 0 100%; /* Images take full width */
     }
 }
 
@@ -230,11 +226,11 @@ footer a {
     }
 
     #workImages {
-        flex-direction: column; /* Stack images vertically */
+        flex-direction: column; /* Stack images vertically on mobile */
     }
 
     .project-link {
-        flex: 0 0 100%; /* Images take up the full width */
+        flex: 0 0 100%; /* Full width for images */
     }
 
     #hero h1 {
@@ -248,10 +244,10 @@ footer a {
     footer p {
         font-size: small; /* Adjust footer text for mobile */
     }
+
     #hero h1 {
         font-size: large;
         font-weight: light;
-        margin-left: 2%
-    
+        margin-left: 2%;
     }
 }

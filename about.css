@@ -15,6 +15,31 @@ body{
     --black: #191923;
 }
 
+font-face {
+    font-family: "Unbounded";
+    src: url(fonts/Unbounded/Unbounded-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url(fonts/Unbounded/Unbounded-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded/Unbounded-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded/Unbounded-Black.ttf") format("truetype");
+    font-weight: bold;
+}
 
 @font-face {
     font-family: 'icons';
@@ -27,14 +52,14 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    font-family: 'solanel', sans-serif;
+    font-family: "Unbounded",'solanel', sans-serif;
     height: auto;
 }
 #header{
     display: flex;
     align-items: center;
     /* border: 1px solid black; */
-    font-family: 'solanel';
+    font-family: "Unbounded",'solanel';
     margin: 0% 1%;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -88,7 +113,9 @@ body{
     scale: 105%;
 }
 
-
+#accent{
+    color: var(--accent)
+}
 #contactText{
     text-align: center;
 }
@@ -102,6 +129,7 @@ body{
     justify-content: start;
     list-style-type: none;
     padding: 20px 0;
+    margin-right: 3%;
 }
 #navbar li {
     color: var(--black);

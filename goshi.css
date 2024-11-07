@@ -26,10 +26,36 @@ body {
     src: url(fonts/Software-Icons.otf);
 }
 
+@font-face {
+    font-family: "Unbounded";
+    src: url(fonts/Unbounded/Unbounded-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url(fonts/Unbounded/Unbounded-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded/Unbounded-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded/Unbounded-Black.ttf") format("truetype");
+    font-weight: bold;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: 'solanel', sans-serif;
+    font-family: "Unbounded", 'solanel', sans-serif;
     overflow-x: hidden;
 }
 
@@ -96,13 +122,14 @@ body {
 #workImages {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     box-shadow: 10px 5px 5px var(--accent);
+    gap: 20px; /* Add gap between images */
 }
 
 #workImages img {
-    margin: 1%;
-    width: 540.67px;
+    margin: 0;  
     object-fit: cover;
     box-shadow: 5px 2px 4px var(--black);
     visibility: hidden;
@@ -235,10 +262,9 @@ iframe {
     margin-top: 1.2%;
     box-shadow: 5px 2px 4px var(--black);
     width: 100%; /* Make iframe responsive */
-    height: 100%;/* Auto height to maintain aspect ratio */
+    height: 100%; /* Auto height to maintain aspect ratio */
     overflow: hidden;
     -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
-    
 }
 
 /* MEDIA QUERIES */
@@ -246,7 +272,7 @@ iframe {
 /* Desktop View - Maintain two images per row */
 @media (min-width: 769px) {
     #workImages img {
-        width: calc(50% - 20px); /* Two images per row */
+        width: calc(50% - 20px); /* 2 images per row on desktops */
     }
 }
 
@@ -342,6 +368,6 @@ iframe {
     #subImages iframe,
     #subImages img {
         width: 100%; /* Full width for iframe and image on mobile */
-        margin-bottom: 10px; /* Space between iframe and image */
+        margin-bottom: 10px; /* Ensure spacing */
     }
 }
