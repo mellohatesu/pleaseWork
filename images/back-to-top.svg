@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fbfdf9;
+      }
+
+      .cls-2 {
+        font-family: Unbounded-Medium, Unbounded;
+        font-size: 478.76px;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        fill: #181923;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" width="500" height="500"/>
+  <rect class="cls-1" x="232.97" y="126.35" width="34.05" height="304.05"/>
+  <text class="cls-2" transform="translate(419.86 263.8) rotate(-90) scale(.6 1)"><tspan x="0" y="0">&gt;</tspan></text>
+</svg>

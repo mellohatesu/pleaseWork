@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-image: url(images/background_SH.svg);
     background-size: cover;
@@ -73,11 +75,39 @@ body {
     flex-wrap: wrap;
     max-width: 1200px;
 }
-
 #header p {
     /* font-size: smaller; */
 }
 
+.stack{
+    display: flex;
+    width: 50%;
+    gap: 150px;
+    background-color: rgb(24 25 35);
+}
+.fullstack{
+    display: flex;
+    gap: 20px;
+    
+}
+
+
+a > h3{ 
+    margin-left: 45.7%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+a:last-of-type{
+    text-decoration: none;
+    color: var(--black);
+    transition: .5s ease;
+}
+
+a:last-of-type:hover{
+    text-decoration: none;
+    color: var(--accent)
+}
 #logo {
     width: 20%;
     height: auto;
@@ -139,6 +169,15 @@ body {
 
 }
 
+.stack{
+  flex-direction: column;
+  /* gap: 50px; */
+}
+video{
+    width: 50%;
+    height: 100%;
+
+}
 #workImages img {
 
     height: auto; /* Maintains original aspect ratio */
@@ -209,6 +248,11 @@ figcaption{
     overflow-wrap: break-word;
 }
 
+#back-to-top{
+    width: 2%;
+    height: auto;
+}
+
 #space {}
 
 .information p {
@@ -251,6 +295,9 @@ footer {
     margin-left: 4.5%;
     display: flex;
     width: 1200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Animations */

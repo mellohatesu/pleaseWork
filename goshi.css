@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-image: url(images/background_SH.svg);
     background-size: cover;
@@ -150,7 +154,9 @@ figcaption{
     display: inline-block; /* Ensure proper inline sizing */
     margin: 0 auto; /* Center icons */
 }
-
+#subImages #sub1 {
+    margin-top: 5%;
+}
 #subImages {
     display: flex;
     flex-direction: column; /* Row layout for larger screens */
@@ -214,7 +220,23 @@ figcaption{
 .scroll-hr.visible {
     opacity: 1;
 }
+a > h3{ 
+    margin-left: 45.7%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: "Unbounded";
+}
 
+a:last-of-type{
+    text-decoration: none;
+    color: var(--black);
+    transition: .5s ease;
+}
+
+a:last-of-type:hover{
+    text-decoration: none;
+    color: var(--accent)
+}
 #mainPhoto {
     width: 100%;
     height: 50%;
@@ -263,6 +285,22 @@ footer p {
 
 #workImages img:nth-child(4) {
     animation-delay: 0.8s;
+}
+a > h3{ 
+    margin-left: 45.7%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+a:last-of-type{
+    text-decoration: none;
+    color: var(--black);
+    transition: .5s ease;
+}
+
+a:last-of-type:hover{
+    text-decoration: none;
+    color: var(--accent)
 }
 
 iframe {
@@ -346,12 +384,27 @@ iframe {
         font-size: small; /* Adjust paragraph size for mobile */
     }
 
+    
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 3%;
+    margin-left: 4.5%;
+    display: flex;
+    width: 1200px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
     footer p {
         font-size: small; color: var(--white) /* Adjust footer text for mobile */
     }
 
-    footer a {
-        color: var(--white)
+    footer a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: xx-large;
     }
     .information p {
         width: auto; /* Allow paragraph width to be responsive */
