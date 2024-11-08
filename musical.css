@@ -3,31 +3,22 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     scroll-behavior: smooth;
   }
-
 body {
     background-image: url(images/background_SH.svg);
     background-size: cover;
+    overflow-x: hidden;
 }
-
+a{
+    display: inline-block;
+}
 :root {
     --gray: #bfbfbf;
-    --accent: #c1f1fd;
+    --accent: #DE8589;
     --white: #FBFEF9;
     --black: #191923;
-}
-
-@font-face {
-    font-family: 'solanel';
-    src: url(fonts/solanelRegular.otf);
-}
-
-@font-face {
-    font-family: 'icons';
-    src: url(fonts/Software-Icons.otf);
 }
 
 @font-face {
@@ -56,10 +47,29 @@ body {
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "Unbounded";
+    src: url("fonts/Unbounded/Unbounded-Medium.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'solanel';
+    src: url(fonts/solanelRegular.otf);
+}
+
+@font-face {
+    font-family: 'icons';
+    src: url(fonts/Software-Icons.otf);
+}
+#backHome {
+   display: inline-block;
+
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: "Unbounded", 'solanel', sans-serif;
+    font-family: 'Unbounded', sans-serif;
     overflow-x: hidden;
 }
 
@@ -69,18 +79,49 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
-
 }
 
-#header p {
-    font-size: smaller;
+.stack{
+    display: flex;
+    width: 50%;
+    gap: 150px;
+    background-color: rgb(24 25 35);
+}
+.fullstack{
+    display: flex;
+    gap: 20px;
+    
 }
 
-#logo {
+
+
+a > h3{ 
+    margin-left: 45.7%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+a:last-of-type{
+    text-decoration: none;
+    color: var(--black);
+    transition: .5s ease;
+}
+
+a:last-of-type:hover{
+    text-decoration: none;
+    color: var(--accent)
+}
+
+#swag{
+    width: 100%;
+}
+ #logo {
     width: 20%;
     height: auto;
     margin: 2% 0%;
     transition: .1s ease-in-out;
+    display: block;
+
 }
 
 #logo:hover {
@@ -89,11 +130,11 @@ body {
 
 #navbar {
     display: flex;
-    flex-direction: row;
     justify-content: start;
     list-style-type: none;
-    padding: 20px 0;
-    margin-right: 3%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
 }
 
 #navbar li {
@@ -125,44 +166,52 @@ body {
 }
 
 #workImages {
-    
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
-    box-shadow: 10px 5px 5px var(--accent);
-    gap: 20px; /* Add gap between images */
+    gap: 10px; /* Space between images */
+    max-width: 100%;
+    overflow-y: auto; /* Allows vertical scrolling */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 3.5%;
+
 }
 
+.stack{
+  flex-direction: column;
+  /* gap: 50px; */
+}
+video{
+    width: 100%;
+    height: 100%;
+
+}
 #workImages img {
-    margin: 0;  
-    object-fit: cover;
+
+    height: auto; /* Maintains original aspect ratio */
+    object-fit:fill; 
     box-shadow: 5px 2px 4px var(--black);
-    visibility: hidden;
-    animation: fadeInUp 0.8s ease forwards;
 }
-figcaption{
-    font-weight: lighter;
-    opacity: 50%;
-}
+
+
+
 #icons {
     font-family: "icons";
-    font-size: xx-large;
+    font-size: larger;
     cursor: pointer;
-    max-width: 100%; /* Prevent icons from exceeding the viewport width */
-    overflow-wrap: break-word; /* Ensure icons wrap if necessary */
-    white-space: nowrap; /* Prevent icons from breaking into multiple lines */
-    display: inline-block; /* Ensure proper inline sizing */
-    margin: 0 auto; /* Center icons */
 }
-#subImages #sub1 {
-    margin-top: 5%;
+
+footer a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: xx-large;
 }
-#subImages {
-    display: flex;
-    flex-direction: column; /* Row layout for larger screens */
-    gap: 20px;
+
+
+#subImages img {
     width: 100%;
-    align-items: center;
+    margin-bottom: 10px;
 }
 
 .textBlock {
@@ -174,6 +223,8 @@ figcaption{
 .desc {
     margin-left: 3.7%;
     font-size: x-large;
+    font-family: "Unbounded";
+    font-style: normal;
 }
 
 .information {
@@ -183,18 +234,32 @@ figcaption{
 .information p {
     line-height: .5;
     margin-top: 2%;
-    overflow-wrap: break-word; /* Prevent text overflow */
 }
 
+figcaption{
+    font-weight: lighter;
+    opacity: 0%;
+}
 .desc h2 span {
     font-size: inherit;
     border: 2px solid var(--black);
     border-radius: 0 5px 0 0;
     background-color: var(--black);
     color: var(--white);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-#space {}
+.information {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#back-to-top{
+    width: 2%;
+    height: auto;
+}
+
 
 .information p {
     width: 1100px;
@@ -204,7 +269,6 @@ figcaption{
     display: flex;
     justify-content: space-between;
     gap: 83%;
-    flex-wrap: nowrap;
 }
 
 .scroll-hr {
@@ -217,34 +281,14 @@ figcaption{
     transition: opacity 1s ease-in-out;
 }
 
-a{
-    text-decoration: none;
-    color: var(--black)
-}
 .scroll-hr.visible {
     opacity: 1;
 }
-a > h3{ 
-    margin-left: 45.7%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    font-family: "Unbounded";
-}
 
-a:last-of-type{
-    text-decoration: none;
-    color: var(--black);
-    transition: .5s ease;
-}
-
-a:last-of-type:hover{
-    text-decoration: none;
-    color: var(--accent)
-}
 #mainPhoto {
     width: 100%;
     height: 50%;
-    object-fit: cover;
+    object-fit: fit;
     border-radius: 0 20px 0 0;
     margin-bottom: 5%;
     box-shadow: 2px 2px 4px var(--accent);
@@ -253,14 +297,15 @@ a:last-of-type:hover{
 footer {
     background-color: var(--black);
     color: var(--white);
-    padding: 10px;
-    text-align: center;
-    margin-top: 2%;
+    margin-top: 3%;
+    margin-left: 4.5%;
+    display: flex;
+    width: 1200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
-footer p {
-    margin: 0;
-}
 /* Animations */
 @keyframes fadeInUp {
     0% {
@@ -290,43 +335,27 @@ footer p {
 #workImages img:nth-child(4) {
     animation-delay: 0.8s;
 }
-a > h3{ 
-    margin-left: 45.7%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-}
-
-a:last-of-type{
-    text-decoration: none;
-    color: var(--black);
-    transition: .5s ease;
-}
-
-a:last-of-type:hover{
-    text-decoration: none;
-    color: var(--accent)
-}
-
-iframe {
-    margin-top: 1.2%;
-    box-shadow: 5px 2px 4px var(--black);
-    width: 100%; /* Make iframe responsive */
-    height: 100%; /* Auto height to maintain aspect ratio */
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling */
-}
 
 /* MEDIA QUERIES */
 
 /* Desktop View - Maintain two images per row */
 @media (min-width: 769px) {
     #workImages img {
-        width: calc(50% - 20px); /* 2 images per row on desktops */
+        width: calc(50% - 20px); /* Two images per row */
+    }
+    
+    #icons {
+        font-size: smaller; /* Reduce text size for desktop */
+        max-width: 95%;
     }
 }
 
 /* Tablets */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     #logo {
         width: 30%; /* Smaller logo for tablets */
     }
@@ -344,20 +373,22 @@ iframe {
         width: 100%; /* Full-width images on tablets */
     }
 
-    iframe {
-        width: 100%; /* Full width for iframe on tablets */
-        height: auto; /* Adjust height */
+    .desc,
+    .information p {
+        font-size: small; /* Reduce text size for mobile */
+        margin-left: 2%;
+        max-width: 95%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        font-weight: normal;
     }
 
-    #subImages {
-        flex-direction: column; /* Stack iframe and image vertically */
-        align-items: center;
-    }
-
-    #subImages iframe,
-    #subImages img {
-        width: 100%; /* Full-width iframe and image on tablets */
-        margin-bottom: 10px;
+    #icons {
+        font-size: small; /* Reduce text size for mobile */
+        margin-left: 2%;
+        max-width: 95%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 }
 
@@ -367,6 +398,13 @@ iframe {
         width: 40%; /* Even smaller logo on mobile */
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
+    #header{
+        margin: 3%;
+    }
     #navbar {
         flex-direction: column;
         align-items: center;
@@ -375,66 +413,37 @@ iframe {
     #workImages {
         flex-direction: column; /* Stack images vertically */
     }
-
+    #hero{
+        margin: 5%;
+}
+  
     #workImages img {
         width: 100%; /* Full-width images on mobile */
     }
 
     #hero h1 {
-        font-size: large; /* Adjust heading size for mobile */
+        font-size: large;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
-
-    #hero p {
-        font-size: small; /* Adjust paragraph size for mobile */
-    }
-
-    
-footer {
-    background-color: var(--black);
-    color: var(--white);
-    margin-top: 3%;
-    margin-left: 4.5%;
-    display: flex;
-    width: 1200px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-}
 
     footer p {
-        font-size: small; color: var(--white) /* Adjust footer text for mobile */
+        font-size: small;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        margin: 5%;
     }
 
-    footer a{
-        text-decoration: none;
-        color: var(--white);
-        font-size: xx-large;
-    }
+    .desc,
     .information p {
-        width: auto; /* Allow paragraph width to be responsive */
-        margin-left: 0; /* Reset margin for better alignment */
+        font-size: small;
+        margin-left: 2%;
+        max-width: 95%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     #icons {
-        font-size: medium; /* Adjust icon size for mobile */
-        max-width: 100%; /* Ensure icons fit the mobile viewport */
-        margin-right: 5%;
-    }
-
-    iframe {
-        height: 100%; /* Adjust height for mobile */
-        max-width: 100%; /* Ensure iframe doesn't exceed viewport */
-        box-shadow: 2px 2px 4px var(--black); /* Keep the shadow for visibility */
-    }
-
-    #subImages {
-        flex-direction: column; /* Stack vertically on mobile */
-        align-items: center;
-    }
-
-    #subImages iframe,
-    #subImages img {
-        width: 100%; /* Full width for iframe and image on mobile */
-        margin-bottom: 10px; /* Ensure spacing */
+        font-size: small;
     }
 }

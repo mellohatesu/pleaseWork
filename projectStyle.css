@@ -11,7 +11,9 @@ body {
     background-size: cover;
     overflow-x: hidden;
 }
-
+a{
+    display: inline-block;
+}
 :root {
     --gray: #bfbfbf;
     --accent: #DE8589;
@@ -60,7 +62,10 @@ body {
     font-family: 'icons';
     src: url(fonts/Software-Icons.otf);
 }
+#backHome {
+   display: inline-block;
 
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -75,9 +80,6 @@ body {
     flex-wrap: wrap;
     max-width: 1200px;
 }
-#header p {
-    /* font-size: smaller; */
-}
 
 .stack{
     display: flex;
@@ -90,6 +92,7 @@ body {
     gap: 20px;
     
 }
+
 
 
 a > h3{ 
@@ -108,11 +111,17 @@ a:last-of-type:hover{
     text-decoration: none;
     color: var(--accent)
 }
-#logo {
+
+#swag{
+    width: 100%;
+}
+ #logo {
     width: 20%;
     height: auto;
     margin: 2% 0%;
     transition: .1s ease-in-out;
+    display: block;
+
 }
 
 #logo:hover {
@@ -199,8 +208,6 @@ footer a{
     font-size: xx-large;
 }
 
-#subImages {
-}
 
 #subImages img {
     width: 100%;
@@ -253,7 +260,6 @@ figcaption{
     height: auto;
 }
 
-#space {}
 
 .information p {
     width: 1100px;
@@ -410,9 +416,7 @@ footer {
     #hero{
         margin: 5%;
 }
-    #icons{
-
-    }
+  
     #workImages img {
         width: 100%; /* Full-width images on mobile */
     }
