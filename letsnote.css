@@ -20,7 +20,10 @@ body {
     --white: #FBFEF9;
     --black: #191923;
 }
+video{
+    width: 100%;
 
+}
 @font-face {
     font-family: 'solanel';
     src: url(fonts/solanelRegular.otf);
