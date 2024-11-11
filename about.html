@@ -84,7 +84,60 @@
         
 
     </div>  
+    <div class="bookCovers">
+        <figure>
+            <img src="images/norwegianWood.jpg">
+            <figcaption>Norwegian Wood <br><i>Haruki Murakami</i></figcaption>
+        </figure>
+        <figure>
+            <img src="images/BLACK.jpg">
+            <figcaption>EXPO EXPO <br><i>M-FLO</i></figcaption>
+        </figure>
+        <figure>
+            <img src="images/GO.jpg">
+            <figcaption>Last Century Modern <br> <i>Kazuki Kaneshiro</i></figcaption>
+        </figure>
+        <figure>
+    </div>
 </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const albumCovers = document.querySelector('.albumCovers');
+    
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target); // Stop observing once the effect is applied
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        observer.observe(albumCovers);
+    });
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const albumCovers = document.querySelector('.bookCovers');
+    
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target); // Stop observing once the effect is applied
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        observer.observe(bookCovers);
+    });
+    </script>
+    
 </body>
 </html>
