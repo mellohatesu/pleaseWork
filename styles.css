@@ -64,18 +64,14 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0% 0%;
     max-width: 1200px;
-    
 }
 
-#backHome {}
 #logo {
     width: 20%;
     height: auto;
     margin-top: 2%;
-    transition: .1s ease-in-out;
-
+    transition: 0.1s ease-in-out;
 }
 
 #navbar {
@@ -83,9 +79,7 @@ body {
     flex-direction: row;
     justify-content: start;
     list-style-type: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
+    padding: 20px 30px;
 }
 
 #navbar li {
@@ -95,8 +89,7 @@ body {
 #navbar li a {
     color: var(--black);
     text-decoration: none;
-    transition: .3s ease;
-    margin-bottom: 10px;
+    transition: 0.3s ease;
     margin-right: 5%;
 }
 
@@ -106,7 +99,8 @@ body {
 
 #hero h1 {
     font-size: large;
-    font-weight: light;
+    font-weight: lighter;
+    margin-left: 2%;
 }
 
 #hero p {
@@ -114,32 +108,57 @@ body {
 }
 
 #workImages {
-    display: flex;
-    flex-direction: column; /* Change from row to column */
-    justify-content: start;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
     border: 1px solid;
-    border-radius: 0 20px 0px 0;
-    width: 100%; /* Ensure the container takes full width */
+    border-radius: 0 20px 0 0;
+    width: 100%;
 }
 
 .project-link {
-    flex: 0 0 100%; /* Make images take up full width of the container */
     display: block;
     overflow: hidden;
-    margin: 10px 0; /* Margin to space out images vertically */
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px black;
+    transition: transform 0.3s ease;
 }
 
-#workImages img {
-    width: 100%; /* Ensure images take up full width of their container */
-    height: 100%; /* Ensure images stretch to fill container height */
-    object-fit: cover; /* Maintain aspect ratio while filling space */
+.project-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease;
-    box-shadow: 1px 2px 4px black;
 }
 
 .project-link:hover img {
     transform: scale(1.05);
+}
+
+/* Animations for individual project images */
+#workImages .project-link:nth-child(1) {
+    animation: fadeInUp 0.6s ease forwards;
+}
+#workImages .project-link:nth-child(2) {
+    animation: fadeInUp 0.8s ease forwards;
+}
+#workImages .project-link:nth-child(3) {
+    animation: fadeInUp 1s ease forwards;
+}
+#workImages .project-link:nth-child(4) {
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 footer {
@@ -164,43 +183,12 @@ footer a {
     cursor: pointer;
 }
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-#workImages img:nth-child(1) {
-    animation-delay: 0.2s;
-}
-#workImages img:nth-child(2) {
-    animation-delay: 0.4s;
-}
-#workImages img:nth-child(3) {
-    animation-delay: 0.6s;
-}
-#workImages img:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
-/* RESPONSIVE MEDIA QUERIES */
-
-/* Desktop View */
-@media (min-width: 769px) {
-    .project-link {
-        flex: 0 0 calc(50% - 20px); /* Two images per row for wider screens */
-    }
-}
+/* Responsive Media Queries */
 
 /* Tablets */
 @media (max-width: 768px) {
     #logo {
-        width: 30%; /* Make the logo smaller on tablets */
+        width: 30%;
     }
     
     #navbar {
@@ -209,48 +197,35 @@ footer a {
     }
     
     #workImages {
-        flex-direction: column; /* Ensure images stack vertically on tablets */
-    }
-    
-    .project-link {
-        flex: 0 0 100%; /* Images take full width */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
 
 /* Mobile Phones */
 @media (max-width: 480px) {
     #logo {
-        width: 40%; /* Make the logo even smaller on mobile */
+        width: 40%;
     }
     
     #navbar {
         flex-direction: column;
         align-items: center;
     }
-
+    
     #workImages {
-        flex-direction: column; /* Stack images vertically on mobile */
+        grid-template-columns: 1fr;
     }
-
-    .project-link {
-        flex: 0 0 100%; /* Full width for images */
-    }
-
+    
     #hero h1 {
-        font-size: large; /* Adjust heading size for mobile */
+        font-size: large;
+        font-weight: lighter;
     }
 
     #hero p {
-        font-size: small; /* Adjust paragraph size for mobile */
+        font-size: small;
     }
 
     footer p {
-        font-size: small; /* Adjust footer text for mobile */
-    }
-
-    #hero h1 {
-        font-size: large;
-        font-weight: light;
-        margin-left: 2%;
+        font-size: small;
     }
 }
