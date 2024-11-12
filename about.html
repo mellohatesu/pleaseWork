@@ -44,62 +44,69 @@
         <h4>Favorite Albums</h4>
         <div class="albumCovers">
             <figure>
-                <img src="images/BLRP.jpg">
+                <img  loading="lazy" src="images/BLRP.jpg">
                 <figcaption>Black Life, Red Planet <br><i>Gum.mp3</i></figcaption>
             </figure>
             <figure>
-                <img src="images/EXPOEXPO.jpg">
+                <img  loading="lazy" src="images/EXPOEXPO.jpg">
                 <figcaption>EXPO EXPO <br><i>M-FLO</i></figcaption>
             </figure>
             <figure>
-                <img src="images/LastCenturyModern.jpg">
+                <img  loading="lazy" src="images/LastCenturyModern.jpg">
                 <figcaption>Last Century Modern <br> <i>TOWA TEI</i></figcaption>
             </figure>
             <figure>
-                <img src="images/headache.webp">
+                <img  loading="lazy" src="images/headache.webp">
                 <figcaption>The Head Hurts but the Heart Knows the Truth <i>Headache</i></figcaption>
             </figure>
             <figure>
-                <img src="images/LUST.webp">
+                <img  loading="lazy" src="images/LUST.webp">
                 <figcaption>LUST <br><i>Rei Harakami</i></figcaption>
             </figure>
             <figure>
-                <img src="images/theOOZ.jpg">
+                <img  loading="lazy" src="images/theOOZ.jpg">
                 <figcaption>The Ooz <br> <i>King Krule</i></figcaption>
             </figure>
             <figure>
-                <img src="images/CFCF.jpg">
+                <img  loading="lazy" src="images/CFCF.jpg">
                 <figcaption>Memoryland <br> <i>CFCF</i></figcaption>
             </figure>
             <figure>
-                <img src="images/whenIgetHome.webp">
+                <img  loading="lazy" src="images/whenIgetHome.webp">
                 <figcaption>When I Get Home <i>Solange</i></figcaption>
             </figure>
             <figure>
-                <img src="images/IKYLI.jpg">
+                <img  loading="lazy" src="images/IKYLI.jpg">
                 <figcaption>I Know You Like It <i>Shinichiro Yokota</i></figcaption>
             </figure>
             
         </div>
         
-
+        <h4 id="bookHeader">Favorite Books</h4>
+        <div class="bookCovers">
+           
+            <figure>
+                <img  loading="lazy" src="images/norwegianWood.jpg">
+                <figcaption>Norwegian Wood <br><i>Haruki Murakami</i></figcaption>
+            </figure>
+            <figure>
+                <img  loading="lazy" src="images/BLACK.jpg">
+                <figcaption>EXPO EXPO <br><i>M-FLO</i></figcaption>
+            </figure>
+            <figure>
+                <img  loading="lazy" src="images/GO.jpg">
+                <figcaption>Last Century Modern <br> <i>Kazuki Kaneshiro</i></figcaption>
+            </figure>
+   
+        </div> 
     </div>  
-    <div class="bookCovers">
-        <figure>
-            <img src="images/norwegianWood.jpg">
-            <figcaption>Norwegian Wood <br><i>Haruki Murakami</i></figcaption>
-        </figure>
-        <figure>
-            <img src="images/BLACK.jpg">
-            <figcaption>EXPO EXPO <br><i>M-FLO</i></figcaption>
-        </figure>
-        <figure>
-            <img src="images/GO.jpg">
-            <figcaption>Last Century Modern <br> <i>Kazuki Kaneshiro</i></figcaption>
-        </figure>
-        <figure>
-    </div>
 </div>
+    
+<footer id="footer">
+    <p>Mello Ige 2024 | All rights reserved.</p>
+ </footer>
+</div>
+
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -122,7 +129,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const albumCovers = document.querySelector('.bookCovers');
+        const bookCovers = document.querySelector('.bookCovers');
     
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {

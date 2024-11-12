@@ -109,6 +109,32 @@ font-face {
 h4{
     font-weight: 400;
 }
+
+#bookHeader{
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: xx-large;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 3%;
+   
+    display: flex;
+    width: 1200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
 hr {
     border: 0;
     clear:both;
@@ -363,5 +389,11 @@ footer a{
     }
     #navbar{
        font-size: smaller;
+    }
+    footer p {
+        font-size: small;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        margin: 5%;
     }
   }
