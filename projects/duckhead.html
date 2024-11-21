@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../duckhead.css">
+    <link rel="icon" type="image/svg" href="/images/mm_logos_LN.svg">
+    <title>Let's Note Spread</title>
+</head>
+<body>
+    <div class="black">
+        <div class="container">
+            <div id="header"> 
+                <img id="logo" src="../images/mm_logos_KI.svg" alt="Logo">
+                <ul id="navbar">
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="hero">
+                <h1 id="title">Duckhead Logo Redesign</h1>
+                <div class="title">
+                    <p>Visual Communication</p>
+                    <h2 id="icons">51</h2>
+                </div>
+                <hr>
+                <div class="textBlock">
+                    <div class="desc">
+                        <img id="mainPhoto" src="../images/duckheaditerations2.png" alt="Main Process Photo">
+                        <h2 id="space"><span>Overview</span></h2>
+                        <hr class="scroll-hr" id="hrElement">
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p>Magazine advertisement for beer, <b><i>Kirin Ichiban</i></b>, showcasing the elegance and versatility of the beverage. Inspired by a glass at an Izakaya, the taste was unlike anything I've had before.</p>
+                    <p>This project highlights how the drink can be enjoyed in both casual and professional settings.</p>
+                    <p>The design process emphasized simplicity, readability, and elegance.</p>
+                </div>
+
+                <!-- Process Photos Section -->
+                <section id="processPhotos">
+                    <h2>Process Photos</h2>
+                    <div class="process-photo-grid">
+                        <figure>
+                            <img src="../images/originalLogo.webp" alt="Original storyboard">
+                            <figcaption>Original storyboard</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/duckheaditeration1.png" alt="Layer breakdown for Scene 8">
+                            <figcaption>First Attempt </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/iteration1bag.png" alt="Color testing">
+                            <figcaption>Tote Bag </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/stickers.png" alt="Color testing">
+                            <figcaption>Duckhead Stickers</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <p>I wanted to reincorporate the "Original" because it seems so integeral to their branding. So I came up with this.</p>
+                <section id="processPhotos">
+                    <div class="process-photo-grid">
+                        <figure>
+                            <img src="../images/duckheaditerations2.png" alt="Original storyboard">
+                            <figcaption>Second Iteration</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/process.png">
+                            <figcaption></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/umbrellaBranding.png"Color testing">
+                            <figcaption></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/notebook.png" alt="Layer breakdown for Scene 8">
+                            <figcaption></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/originalDuckHead.png"Color testing">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+
+            <footer id="footer">
+                <p>Mello Ige 2024 | All rights reserved.</p>
+                <a href="#top"><h3>Back to Top</h3></a>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var hrElement = document.getElementById('hrElement');
+            var scrollPosition = window.scrollY || window.pageYOffset; // Get the vertical scroll position
+
+            if (scrollPosition > 300) { // Adjust when the <hr> appears
+                hrElement.classList.add('visible');
+            } else {
+                hrElement.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -241,6 +241,13 @@ a:last-of-type:hover{
     }
 }
 
+#figures{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
 #workImages img:nth-child(1) {
     animation-delay: 0.2s;
 }
