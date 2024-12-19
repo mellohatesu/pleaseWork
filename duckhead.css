@@ -205,9 +205,16 @@ footer {
     color: var(--white);
     padding: 10px;
     text-align: center;
-    margin-top: 2%;
 }
 
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
 a > h3{ 
     margin-left: 45.7%;
     margin-top: 2%;

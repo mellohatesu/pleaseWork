@@ -159,9 +159,6 @@ video{
     font-size: x-large;
 }
 
-.information {
-
-}
 
 .information p {
     line-height: .5; 
@@ -205,7 +202,15 @@ footer {
     color: var(--white);
     padding: 10px;
     text-align: center;
-    margin-top: 2%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 a > h3{ 

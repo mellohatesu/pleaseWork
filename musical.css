@@ -297,13 +297,17 @@ figcaption{
 footer {
     background-color: var(--black);
     color: var(--white);
-    margin-top: 3%;
-    margin-left: 4.5%;
-    display: flex;
-    width: 1200px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 /* Animations */

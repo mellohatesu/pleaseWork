@@ -187,7 +187,17 @@ p{
 footer {
     background-color: var(--black);
     color: var(--white);
-    margin-top: 3%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 /* Animations */
