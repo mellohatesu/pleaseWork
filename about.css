@@ -379,21 +379,34 @@ footer a{
     animation-delay: 0.8s;
   }
 
-  @media (max-width: 480px){
-    .about{
-        flex-direction: column;
+  @media (max-width: 480px) {
+    .about {
+        flex-direction: column;  /* Stack the items vertically */
         padding: 0;
+        width: 100%;
+        margin: 3%;
     }
-    .aboutText{
-        
+
+    .about img {
+        width: 70%;  /* Adjust the width of the GIF to a good size */
+        margin: 2% 0;  /* Add vertical spacing */
     }
-    #navbar{
-       font-size: smaller;
+
+    #aboutText {
+        width: 100%;  /* Make the text container take up full width */
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
+
+    #navbar {
+        font-size: smaller;
+    }
+
     footer p {
         font-size: small;
         word-wrap: break-word;
         overflow-wrap: break-word;
         margin: 5%;
     }
-  }
+}
