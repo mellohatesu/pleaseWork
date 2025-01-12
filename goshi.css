@@ -72,6 +72,7 @@ body {
 
 }
 
+
 #header p {
     font-size: smaller;
 }
@@ -86,7 +87,9 @@ body {
 #logo:hover {
     scale: 105%;
 }
-
+#header a{
+    width: 80%;
+}
 #navbar {
     display: flex;
     flex-direction: row;
@@ -419,6 +422,7 @@ footer {
     .information p {
         width: auto; /* Allow paragraph width to be responsive */
         margin-left: 0; /* Reset margin for better alignment */
+        width: 100vw;
     }
 
     #icons {

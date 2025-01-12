@@ -237,6 +237,9 @@ footer a{
     font-size: x-large;
 }
 
+#header a{
+    width: 80%;
+}
 figcaption{
     font-weight: lighter;
     opacity: 0%;
@@ -442,6 +445,7 @@ footer {
         max-width: 95%;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        width: 100vw;
     }
 
     #icons {
