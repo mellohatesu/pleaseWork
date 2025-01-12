@@ -50,7 +50,7 @@ font-face {
     src: url(fonts/solanelRegular.otf);
 }
 .container{
-    max-width: 1200px;
+    max-width: 85vw;
     margin: 0 auto;
     font-family: "Unbounded",'solanel', sans-serif;
     height: auto;
@@ -63,7 +63,7 @@ font-face {
  
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 85vwl
     
 }
 .about{

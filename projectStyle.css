@@ -67,7 +67,7 @@ a{
 
 }
 .container {
-    max-width: 1200px;
+    max-width: 85vw;
     margin: 0 auto;
     font-family: 'Unbounded', sans-serif;
     overflow-x: hidden;
@@ -78,7 +78,7 @@ a{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 85vw;
 }
 
 .stack{
@@ -234,6 +234,7 @@ footer a{
 .information p {
     line-height: .5;
     margin-top: 2%;
+    font-size: x-large;
 }
 
 figcaption{
@@ -300,7 +301,7 @@ footer {
     margin-top: 3%;
     margin-left: 4.5%;
     display: flex;
-    width: 1200px;
+    max-width: 85vw;
     height: 50px;
     justify-content: center;
     align-items: center;

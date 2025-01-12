@@ -60,7 +60,7 @@ video{
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 85vw;
     margin: 0 auto;
     font-family: "Unbounded",'solanel', sans-serif;
 }
@@ -71,7 +71,7 @@ video{
     margin: 0 1%;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 85vw;
 }
 
 #logo {
@@ -115,6 +115,8 @@ video{
 
 #hero p {
     line-height: 1.8;
+    font-size: x-large;
+    width: 45vw;
 }
 
 #workImages {
