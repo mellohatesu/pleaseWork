@@ -72,17 +72,17 @@
         document.getElementById('scrollToProjects').addEventListener('click', () => {
             document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
         });
-
+    
         // Particle.js Interaction
         particlesJS('particles-js', {
             particles: {
-                number: { value: 100 },
-                color: { value: "#00AEEF" },
+                number: { value: 100 }, // Adjust number of particles
+                color: { value: "#00AEEF" }, // Particle color
                 shape: { type: "circle" },
-                opacity: { value: 0.5 },
-                size: { value: 2 },
-                line_linked: { enable: true, color: "#00AEEF" },
-                move: { enable: true, speed: 0.5 }
+                opacity: { value: 0.5 }, // Transparency
+                size: { value: 3 }, // Size of particles
+                line_linked: { enable: true, color: "#00AEEF" }, // Lines between particles
+                move: { enable: true, speed: 1 } // Movement speed
             },
             interactivity: {
                 detect_on: "canvas",
@@ -96,7 +96,7 @@
                 }
             }
         });
-
+    
         // Change Particle Color on Click
         document.getElementById('particles-js').addEventListener('click', () => {
             const colors = ["#00AEEF", "#FF6347", "#FFD700", "#32CD32", "#8A2BE2"];

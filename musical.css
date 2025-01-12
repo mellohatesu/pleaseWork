@@ -194,6 +194,9 @@ video{
     box-shadow: 5px 2px 4px var(--black);
 }
 
+#header a{
+    width: 80%;
+}
 
 
 #icons {
