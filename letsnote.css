@@ -60,7 +60,7 @@ video{
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 90vw;
     margin: 0 auto;
     font-family: "Unbounded",'solanel', sans-serif;
 }
@@ -70,7 +70,7 @@ video{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 90vw;
 }
 
 #logo {
