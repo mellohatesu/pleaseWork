@@ -397,7 +397,7 @@ footer a{
     }
 
     #aboutText {
-        width: 100%;  /* Make the text container take up full width */
+        width: 90%;  /* Make the text container take up full width */
         margin-top: 2%;
         margin-left: 2%;
         margin-right: 2%;
