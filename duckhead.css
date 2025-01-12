@@ -111,6 +111,9 @@ hr{
     color: var(--accent);
 }
 
+#header a{
+    width: 80%;
+}
 #hero h1 {
     margin: auto;
     font-size: xx-large;
