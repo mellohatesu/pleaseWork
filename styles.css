@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: var(--white);
+    
     background-size: cover;
     font-family: 'Unbounded', sans-serif;
     font-weight: normal;
@@ -13,12 +13,12 @@ body {
     overflow-x: hidden;
 }
 body {
-    background-color: white;
+
     color: black;
 }
 
 #header {
-    background-color: #f8f8f8;
+   
 }
 
 a {
