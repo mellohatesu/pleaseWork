@@ -170,7 +170,6 @@ hr{
 .textblock2{
     display: flex;
     gap: 20px;
-    fo
 }
 
 
@@ -370,6 +369,10 @@ iframe {
     #navbar {
         flex-direction: column;
         align-items: center;
+    }
+
+    .textblock2{
+        flex-direction: column;
     }
 
     #workImages {

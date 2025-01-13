@@ -12,7 +12,36 @@ body {
     color: var(--black);
     overflow-x: hidden;
 }
+body {
+    background-color: white;
+    color: black;
+}
 
+#header {
+    background-color: #f8f8f8;
+}
+
+a {
+    color: #00AEEF;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode #header {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode a {
+    color: #ff9800;
+}
+
+body.dark-mode #navbar a {
+    color: #ffa726;
+}
 :root {
     --gray: #bfbfbf;
     --accent: #00AEEF;
@@ -59,7 +88,21 @@ body {
     width: 100%;
     padding: 20px;
 }
-
+#threejs-canvas {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50vh;
+    z-index: 1;
+    pointer-events: none; /* Prevent blocking interaction */
+}
+#landing {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
 #logo {
     width: 15%;
     height: auto;
