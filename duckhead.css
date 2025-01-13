@@ -167,13 +167,18 @@ hr{
     font-size: x-large;
 }
 
+.textblock2{
+    display: flex;
+    gap: 20px;
+    fo
+}
 
 
 .information p {
     line-height: .5; 
     margin-top: 2%;
     width: 40vw;
-    font-size: x-large;
+    font-size: large;
 }
 
 .desc h2 {
