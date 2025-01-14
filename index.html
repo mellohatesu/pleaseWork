@@ -18,24 +18,22 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="photos.html">Gallery</a></li>
             </ul>
-           
         </div>
         <!-- Landing Section -->
         <div id="landing">
             <h1>Welcome</h1>
             <p>Take a walk. Think it over.</p>
             <button id="scrollToProjects">View Projects</button>
-            <canvas id="threejs-canvas"></canvas>
         </div>
 
         <div id="hero">
             <br />  
-         
+           
             <br>
 
             <div id="workImages">
                 <a href="projects/cadet.html" class="project-link">
-                    <img src="images/bags.png" alt="bags">
+                    <img src="images/cadetCoffeeSpread.png" alt="bags">
                 </a>
                 <a href="projects/goshi.html" class="project-link">
                     <img src="images/Goshithumbnail.png" alt="Project Goshi">
@@ -74,17 +72,17 @@
         document.getElementById('scrollToProjects').addEventListener('click', () => {
             document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
         });
-
+    
         // Particle.js Interaction
         particlesJS('particles-js', {
             particles: {
-                number: { value: 100 },
-                color: { value: "#00AEEF" },
+                number: { value: 100 }, // Adjust number of particles
+                color: { value: "#00AEEF" }, // Particle color
                 shape: { type: "circle" },
-                opacity: { value: 0.5 },
-                size: { value: 2 },
-                line_linked: { enable: true, color: "#00AEEF" },
-                move: { enable: true, speed: 0.5 }
+                opacity: { value: 0.5 }, // Transparency
+                size: { value: 3 }, // Size of particles
+                line_linked: { enable: true, color: "#00AEEF" }, // Lines between particles
+                move: { enable: true, speed: 1 } // Movement speed
             },
             interactivity: {
                 detect_on: "canvas",
@@ -98,7 +96,7 @@
                 }
             }
         });
-
+    
         // Change Particle Color on Click
         document.getElementById('particles-js').addEventListener('click', () => {
             const colors = ["#00AEEF", "#FF6347", "#FFD700", "#32CD32", "#8A2BE2"];
@@ -110,92 +108,6 @@
                 }
             });
         });
-        const darkModeButton = document.getElementById('toggleDarkMode');
-const body = document.body;
-
-// Check and apply saved theme preference
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-    body.classList.add('dark-mode');
-    darkModeButton.textContent = 'Light Mode';
-}
-
-// Toggle dark mode on button click
-darkModeButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-
-    // Update button text
-    if (body.classList.contains('dark-mode')) {
-        darkModeButton.textContent = 'Light Mode';
-        localStorage.setItem('theme', 'dark');
-    } else {
-        darkModeButton.textContent = 'Dark Mode';
-        localStorage.setItem('theme', 'light');
-    }
-});
     </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-   <script>
-       // Setup Three.js Scene
-       const canvas = document.getElementById('threejs-canvas');
-       const scene = new THREE.Scene();
-       const camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
-       const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
-   
-       // Resize canvas
-       function resizeRenderer() {
-           canvas.width = canvas.clientWidth;
-           canvas.height = canvas.clientHeight;
-           renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-           camera.aspect = canvas.clientWidth / canvas.clientHeight;
-           camera.updateProjectionMatrix();
-       }
-       resizeRenderer();
-   
-       // Add lighting
-       const ambientLight = new THREE.AmbientLight(0x00000, 1);
-       scene.add(ambientLight);
-   
-       // Create a rotating cube
-       const geometry = new THREE.BoxGeometry(4, 4, 4);
-       const material = new THREE.MeshStandardMaterial({ 
-           color: 0xffffff,  
-           metalness: 0.5, 
-           roughness: 2 
-       });
-       const cube = new THREE.Mesh(geometry, material);
-       scene.add(cube);
-   
-       // Position camera
-       camera.position.z = 10;
-   
-       // Animation loop
-       function animate() {
-           requestAnimationFrame(animate);
-   
-           // Rotate cube
-           cube.rotation.x += 0.01;
-           cube.rotation.y += 0.01;
-   
-           // Render scene
-           renderer.render(scene, camera);
-       }
-       animate();
-   
-       // Handle window resizing
-       window.addEventListener('resize', () => {
-           resizeRenderer();
-           renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-       });
-   
-       // Make cube react to mouse
-       canvas.addEventListener('mousemove', (event) => {
-           const x = (event.clientX / window.innerWidth) * 2 - 1;
-           const y = -(event.clientY / window.innerHeight) * 2 + 1;
-           cube.rotation.x = y * Math.PI;
-           cube.rotation.y = x * Math.PI;
-       });
-   </script>
-   
 </body>
 </html>
