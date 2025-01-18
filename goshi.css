@@ -9,15 +9,16 @@ html {
   }
 
 body {
-    background-image: url(images/background_SH.svg);
+    background-color: var(--black);
     background-size: cover;
+    color: var(--white)
 }
 
 :root {
     --gray: #bfbfbf;
     --accent: #c1f1fd;
     --white: #FBFEF9;
-    --black: #191923;
+    --black: #151518;
 }
 
 @font-face {
@@ -100,13 +101,13 @@ body {
 }
 
 #navbar li {
-    color: var(--black);
+    color: var(--white);
     margin: 3%;
     list-style-type: none;
 }
 
 #navbar li a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
     margin: 3%;
     transition: .3s ease;
@@ -139,7 +140,7 @@ body {
 #workImages img {
     margin: 0;  
     object-fit: cover;
-    box-shadow: 5px 2px 4px var(--black);
+    box-shadow: 5px 2px 4px var(--white);
     visibility: hidden;
     animation: fadeInUp 0.8s ease forwards;
 }
@@ -184,28 +185,33 @@ figcaption{
 }
 
 .information {
-
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
 }
 
 .information p {
     line-height: .5;
     margin-top: 2%;
-    overflow-wrap: break-word; /* Prevent text overflow */
+    /* overflow-wrap: break-word; Prevent text overflow */
 }
 
 .desc h2 span {
     font-size: inherit;
-    border: 2px solid var(--black);
+    border: 2px solid var(--white);
     border-radius: 0 5px 0 0;
-    background-color: var(--black);
+    background-color: var(--white);
     color: var(--white);
 }
 
 #space {}
 
 .information p {
-    width: 45vw;
-    font-size: x-large;
+    line-height: .5; 
+    margin-top: 2%;
+    width: 40vw;
+
+
 }
 
 .title {
@@ -219,15 +225,15 @@ figcaption{
     opacity: 0;
     width: 1100px;
     height: 2px;
-    background-color: #000;
+    background-color: var(--black);
     margin-right: 5%;
-    color: var(--black);
+    color: var(--white);
     transition: opacity 1s ease-in-out;
 }
 
 a{
     text-decoration: none;
-    color: var(--black)
+    color: var(--white)
 }
 .scroll-hr.visible {
     opacity: 1;
@@ -241,7 +247,7 @@ a > h3{
 
 a:last-of-type{
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
     transition: .5s ease;
 }
 
@@ -259,7 +265,7 @@ a:last-of-type:hover{
 }
 
 footer {
-    background-color: var(--black);
+    background-color: var(--white);
     color: var(--white);
     padding: 10px;
     text-align: center;
@@ -306,7 +312,7 @@ a > h3{
 
 a:last-of-type{
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
     transition: .5s ease;
 }
 
@@ -399,7 +405,7 @@ iframe {
 
     
 footer {
-    background-color: var(--black);
+    background-color: var(--white);
     color: var(--white);
     margin-top: 3%;
     margin-left: 4.5%;
@@ -434,7 +440,7 @@ footer {
     iframe {
         height: 100%; /* Adjust height for mobile */
         max-width: 100%; /* Ensure iframe doesn't exceed viewport */
-        box-shadow: 2px 2px 4px var(--black); /* Keep the shadow for visibility */
+        box-shadow: 2px 2px 4px var(--white); /* Keep the shadow for visibility */
     }
 
     #subImages {

@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,19 +9,20 @@ html {
 }
 
 body {
-    background-image: url(images/background_letsnote.svg);
+    background-color: var(--white);
     background-size: cover; /* Change to cover for better responsiveness */
     overflow-x: hidden; /* Prevent horizontal scroll */
+    color: var(--black)
 }
 
 :root {
     --gray: #bfbfbf;
     --accent: #94A599;
     --white: #FBFEF9;
-    --black: #191923;
+    --black: #151518;
 }
 video{
-    width: 100%;
+    width: 100vw;
 
 }
 @font-face {
@@ -60,9 +61,10 @@ video{
 }
 
 .container {
-    max-width: 85vw;
+    max-width: 100vw;
     margin: 0 auto;
     font-family: "Unbounded",'solanel', sans-serif;
+
 }
 
 #header {
@@ -106,6 +108,7 @@ video{
 }
 hr{
     margin-top: 1%;
+    width: 100vw;
 }
 #navbar li a:hover {
     color: var(--accent);
@@ -132,7 +135,7 @@ hr{
 }
 
 #workImages img {
-    margin: 1%;
+    
     width: 100%;
   
     object-fit: cover;
@@ -158,7 +161,7 @@ hr{
 }
 
 .textBlock {
-    border-radius: 5px; 
+
     margin-top: 2%;
 }
 
@@ -186,12 +189,11 @@ hr{
 }
 
 #mainPhoto {
-    width: 100%;
+    width: 100vw;
     height: 50%;
     object-fit: cover;
-    border-radius: 0 20px 0 0;
     margin-bottom: 5%;
-    box-shadow: 2px 2px 4px var(--black);
+
 }
 
 p{
@@ -199,7 +201,7 @@ p{
 }
 
 #mainPhoto img{
-  margin: 5% 0;
+ 
 }
 
 a {
@@ -214,7 +216,7 @@ a {
 
 footer {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--black);
     padding: 10px;
     text-align: center;
 }
@@ -224,7 +226,7 @@ footer p {
 }
 
 footer a {
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
 }
 a > h3{ 
@@ -308,7 +310,7 @@ a:last-of-type:hover{
 
 iframe {
     margin-top: 1.2%;
-    box-shadow: 5px 2px 4px var(--black);
+ 
 }
 
 /* Media Queries */
@@ -346,11 +348,14 @@ iframe {
 
     .desc, 
     .information p {
-        font-size: small; /* Reduce text size for mobile */
+        font-size: small; 
         margin-left: 2%;
-        max-width: 95%; 
+        width: 100vw;
     }
 
+    .textblock2{
+        flex-direction: column;
+    }
     #icons {
         font-size: small; /* Reduce text size for mobile */
         margin-left: 2%;
@@ -363,12 +368,15 @@ iframe {
         margin:  0 2%;
     }
     #logo {
-        width: 40%; /* Smaller logo on mobile */
+        width: 50%; /* Smaller logo on mobile */
     }
-
+    #header a {
+       width: 60%;
+    }
     #navbar {
-        flex-direction: column;
+        flex-direction: ;
         align-items: center;
+        font-size: small;
     }
 
     .textblock2{
@@ -399,7 +407,7 @@ iframe {
     .information p {
         font-size: small; 
         margin-left: 2%;
-        width: 100vw;
+        width: 80vw;
     }
 
     #icons {
