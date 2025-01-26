@@ -261,7 +261,9 @@ figure img {
     height: auto;
     display: block;
     margin: 0 auto;
+
 }
+
 
 figcaption {
     margin-top: 10px;
@@ -274,6 +276,21 @@ a:last-of-type:hover{
     color: var(--accent)
 }
 
+
+
+.aparell {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a two-column layout */
+    gap: 10px; /* Adds spacing between images */
+}
+
+.aparell img {
+    width: 100%;
+    height: auto; /* Ensures the aspect ratio is maintained */
+    object-fit: contain; /* Keeps the full image visible without cropping */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
 
 
 /* Animations */
