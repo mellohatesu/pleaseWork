@@ -122,7 +122,7 @@ hr{
 }
 
 #hero p {
-    line-height: 1.8;
+    line-height: 2;
 }
 
 #workImages {
@@ -172,6 +172,8 @@ hr{
 .textblock2{
     display: flex;
     gap: 20px;
+    font-size: small;
+    margin-bottom: 2%;
 }
 
 
