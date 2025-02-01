@@ -9,9 +9,9 @@ html {
   }
 
 body {
-    background-color: var(--black);
+    background-color: var(--white);
     background-size: cover;
-    color: var(--white)
+    color: var(--black)
 }
 
 :root {
@@ -101,13 +101,13 @@ body {
 }
 
 #navbar li {
-    color: var(--white);
+    color: var(--black);
     margin: 3%;
     list-style-type: none;
 }
 
 #navbar li a {
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
     margin: 3%;
     transition: .3s ease;
@@ -201,7 +201,7 @@ figcaption{
     border: 2px solid var(--white);
     border-radius: 0 5px 0 0;
     background-color: var(--white);
-    color: var(--white);
+    color: var(--black);
 }
 
 #space {}
@@ -227,13 +227,13 @@ figcaption{
     height: 2px;
     background-color: var(--black);
     margin-right: 5%;
-    color: var(--white);
+    color: var(--black);
     transition: opacity 1s ease-in-out;
 }
 
 a{
     text-decoration: none;
-    color: var(--white)
+    color: var(--black)
 }
 .scroll-hr.visible {
     opacity: 1;
@@ -265,7 +265,7 @@ a:last-of-type:hover{
 }
 
 footer {
-    background-color: var(--white);
+    background-color: var(--black);
     color: var(--white);
     padding: 10px;
     text-align: center;
@@ -312,7 +312,7 @@ a > h3{
 
 a:last-of-type{
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
     transition: .5s ease;
 }
 
