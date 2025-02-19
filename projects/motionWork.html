@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../duckhead.css">
+    <link rel="icon" type="image/svg" href="/images/mm_logos_cadet.svg">
+    <title>Lucky Cow Milk</title>
+</head>
+<body>
+    <div class="black">
+        <div class="container">
+            <div id="header"> 
+                <a href="../projects.html"><img id="logo" src="../images/mm_logos_cadet.svg" alt="Logo"></a>
+                <ul id="navbar">
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../photos.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div id="hero">
+                <h1 id="title">Assorted Motion Projects</h1>
+                <div class="title">
+                    <h2 id="icons">4321</h2>
+                </div>
+                <hr>
+                <div class="textBlock">
+                    <div class="desc">
+                        <img id="mainPhoto" src="../images/AssortedMotionWork.png">
+                        <video autoplay controls >
+                            <source src="../images/CFCFWide.mp4" type="video/mp4">
+                            
+                        </video>
+                        <video autoplay controls >
+                            <source src="../images/AIAIAI ad_2.mp4" type="video/mp4">
+                            
+                        </video>
+
+
+            <footer id="footer">
+                <p>Mello Ige 2024 | All rights reserved.</p>
+                <a href="#top"><h3>Back to Top</h3></a>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var hrElement = document.getElementById('hrElement');
+            var scrollPosition = window.scrollY || window.pageYOffset; // Get the vertical scroll position
+
+            if (scrollPosition > 300) { // Adjust when the <hr> appears
+                hrElement.classList.add('visible');
+            } else {
+                hrElement.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
