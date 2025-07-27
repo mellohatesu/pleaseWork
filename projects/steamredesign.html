@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../duckhead.css">
+    <link rel="icon" type="image/svg" href="/images/mm_logos_cadet.svg">
+    <title>Steam Redesign</title>
+</head>
+<body>
+    <div class="black">
+        <div class="container">
+            <div id="header"> 
+                <a href="../projects.html"><img id="logo" src="../images/mm_logos_cadet.svg" alt="Logo"></a>
+                <ul id="navbar">
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../photos.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div id="hero">
+                <h1 id="title">Steam Redesign</h1>
+                <div class="title">
+                    <p>UI / UX</p>
+                    <h2 id="icons">421</h2><h4>Figma</h2>
+                    
+                </div>
+                <hr>
+                
+                <div class="textBlock">
+                    <div class="desc">
+                        <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe 
+                              src="https://embed.figma.com/proto/PiwoKTz3nDZeEllk0nf0dm/Mello_Project_2?node-id=303-1132&starting-point-node-id=382%3A1498&embed-host=share" 
+                              allowfullscreen 
+                              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid rgba(0, 0, 0, 0.1);">
+                            </iframe>
+                          </div>
+                          
+                          <img id="mainPhoto" src="../images/Reviews.png">
+                        <img id="mainPhoto" src="../images/oldSteam.png">
+                        <img id="mainPhoto" src="../images/CardUpdates.png">
+                        <br>
+            
+                        <hr class="scroll-hr" id="hrElement">
+                    </div>
+                </div>
+
+                <div class="information">
+                  
+                    <br>
+              <div class="textblock2">
+                    <p>The official Steam mobile app has long relied on a web-wrapped interface, leading to slow load times, clunky navigation, and an experience that feels disconnected from modern mobile expectations. I set out to redesign the app from the ground up — not just to clean up the interface, but to reimagine how players engage with Steam on the go.
+                   <br>
+                   <br>
+                   My first step was to strip away the outdated web-like elements and introduce a streamlined, native-feeling layout. Every screen was rethought with clarity, responsiveness, and ease-of-use in mind. I focused on simplifying key touchpoints like the Store, Library, and Friend Chat to feel intuitive and frictionless on mobile.</p>
+                   
+                 
+                    <p>A major addition was integrating mobile wallet payment options. By enabling Apple Pay and Google Pay within the redesigned purchase flow, I made checkout significantly faster and more secure — especially useful for users looking to snag a deal during high-traffic events like Steam sales.
+                        <br>
+                        <br>
+                        This project was about more than polish — it was about creating an experience that feels like it belongs on your phone in 2025. The redesign ditches the outdated web wrapper feel for a fully immersive native experience, built with player convenience at the core.</p>
+                    </div>
+                </div>
+
+                <!-- Process Photos Section -->
+                <section id="processPhotos">
+       
+                    <div class="process-photo-grid">
+                        <figure>
+                            <img src="../images/ShoppingFlow.png" alt="Color testing">
+                            <figcaption> </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/Home_NewsFlow-01.png" alt="Color testing">
+                            <figcaption> </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/CardUpdates.png" alt="Original storyboard">
+                            
+                        </figure>
+                        <figure>
+                            <img src="../images/TypeStudy-01-01.png" alt="Original storyboard">
+                        
+                        </figure>
+ 
+                        <div class="information">
+                            
+                    
+                        </div>
+
+
+                    </div>
+                </section>
+
+            </div>
+
+            <footer id="footer">
+                <p>Mello Ige 2024 | All rights reserved.</p>
+                <a href="#top"><h3>Back to Top</h3></a>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var hrElement = document.getElementById('hrElement');
+            var scrollPosition = window.scrollY || window.pageYOffset; // Get the vertical scroll position
+
+            if (scrollPosition > 300) { // Adjust when the <hr> appears
+                hrElement.classList.add('visible');
+            } else {
+                hrElement.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
